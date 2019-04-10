@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {button} from 'react-native';
 
 class App extends Component {
   render() {
@@ -19,6 +20,13 @@ class App extends Component {
           >
             Learn React
           </a>
+          
+          <Button
+  onPress={onPressLearnMore}
+  title="Learn More"
+  color="#841584"
+  accessibilityLabel="Learn more about this purple button"
+/>
         </header>
       </div>
     );
