@@ -1,33 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import {button} from 'react-native';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      sapa : 'Hallo'
+    }
+  } 
+  clicked = () => {
+    if(this.state.sapa === ':*'){
+      console.log("tru :*");
+      this.setState(
+        {
+          sapa : ':V'
+        }
+      );
+    } else{
+      this.setState(
+        {
+          sapa : ':*'
+        }
+      );
+    }
+    
+  }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          
-          <Button
-  onPress={onPressLearnMore}
-  title="Learn More"
-  color="#841584"
-  accessibilityLabel="Learn more about this purple button"
-/>
-        </header>
+        <h1>{this.state.sapa}</h1>
+          <button className="btn btn-primary btn-lg active" aria-pressed="true" onClick={this.clicked}>Click</button>
       </div>
     );
   }
