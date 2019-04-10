@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/SeptiyaTamara/ReactCoba/precache-manifest.2a72250ef37ad7e53d5c0b6b35496934.js"
+  "/SeptiyaTamara/ReactCoba/precache-manifest.a1045b55cc7730198dd98d091ae5152c.js"
 );
 
 workbox.clientsClaim();
